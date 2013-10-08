@@ -12,7 +12,7 @@ module NokogiriPretty
 
     def apply_to(xml_node)
       xsl = Nokogiri::XSLT(@stylesheet)
-      xsl.apply_to( xml_node ).body.to_s
+      xsl.apply_to( xml_node )
     end
 
     private
